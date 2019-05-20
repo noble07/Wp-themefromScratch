@@ -24,3 +24,10 @@ function scratch_theme_setup(){
 }
 
 add_action('init', 'scratch_theme_setup');
+
+//Se utiliza el hook para agregar la funcionalidad de insertar imagenes de fondo personalizadas
+add_theme_support('custom-background');
+//Se utiliza el hook para agregar la funcionalidad de insertar imagenes de cabecera personalizadas
+add_theme_support('custom-header');
+//Se utiliza el hook para agregar la funcionalidad de insertar imagenes destacadas en los post
+add_theme_support('post-thumbnails');
